@@ -1,0 +1,97 @@
+/* Background video */
+#bgVideo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Page setup */
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+/* App card */
+.app {
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(8px);
+  padding: 32px 40px;
+  border-radius: 22px;
+  width: 340px;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.7);
+}
+
+/* Logo */
+.logo {
+  width: 180px;
+  margin-bottom: 10px;
+}
+
+/* Subtitle */
+.subtitle {
+  font-size: 13px;
+  opacity: 0.85;
+  margin-bottom: 22px;
+}
+
+/* Timer */
+.timer {
+  font-size: 64px;
+  font-weight: bold;
+  margin: 18px 0;
+}
+
+/* Buttons */
+.controls button,
+.music button {
+  background: #f7c873;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 16px;
+  margin: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s ease;
+}
+
+.controls button:hover,
+.music button:hover {
+  background: #f2b94f;
+}
+
+/* Time settings */
+.time-settings {
+  margin-top: 14px;
+  font-size: 13px;
+}
+
+.time-settings input {
+  width: 50px;
+  padding: 4px;
+  border-radius: 6px;
+  border: none;
+  text-align: center;
+}
+
+/* Music section */
+.music {
+  margin-top: 18px;
+  font-size: 13px;
+}
+
+/* Footer */
+.footer {
+  margin-top: 20px;
+  font-size: 12px;
+  opacity: 0.7;
+}

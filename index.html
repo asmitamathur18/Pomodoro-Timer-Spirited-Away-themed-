@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Spirited Away Pomodoro 🍅</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/favicon.ico">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Background Video -->
+  <video autoplay muted loop id="bgVideo">
+    <source src="assets/background.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+
+  <!-- Main App -->
+  <div class="app">
+    <img src="assets/logo.png" class="logo" alt="Spirited Away Logo">
+
+    <div class="subtitle">A quiet focus moment, Ghibli-style</div>
+
+    <div class="timer" id="timer">25:00</div>
+
+    <div class="controls">
+      <button id="startBtn">Start</button>
+      <button id="pauseBtn">Pause</button>
+      <button id="resetBtn">Reset</button>
+    </div>
+
+    <div class="time-settings">
+      Work
+      <input type="number" id="workTime" value="25" min="1"> min
+      &nbsp;&nbsp;
+      Break
+      <input type="number" id="breakTime" value="5" min="1"> min
+    </div>
+
+    <div class="music">
+      🎵 Spirited Away Music
+      <button id="musicBtn">Play Music</button>
+    </div>
+
+    <audio id="bgMusic" loop>
+      <source src="assets/music.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="footer">Inspired by Studio Ghibli ✨</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
